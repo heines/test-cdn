@@ -2,9 +2,6 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div class="">
-      {{ test }}
-    </div>
   </div>
 </template>
 
@@ -16,11 +13,9 @@ export default {
   components: {
     HelloWorld
   },
-  method: {
-    test() {
-      new THREE.WebGL1Renderer();
-    },
-  },
+  mounted() {
+    new THREE.WebGL1Renderer();
+  }
 }
 </script>
 
